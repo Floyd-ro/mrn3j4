@@ -1,0 +1,45 @@
+body
+{
+    background-image:url("background.jpg");
+    background-size: cover;
+}
+
+#rd:hover
+{
+  font-size:xx-large;
+  background-color: rgba(0, 55, 128, 0.404);
+}
+
+#footer
+{
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+img{
+    width:40px;
+    height:20px;
+}
+
+canvas 
+{
+    border: 5px solid white;
+    border-radius: 5px solid grey;
+    box-shadow: 5px solid black ;
+    animation-name: floyd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floyd
+{
+    from{box-shadow:1px 1px 40px red;}
+    to{box-shadow:1px 1px 40px blueviolet;}
+}
